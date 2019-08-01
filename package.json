@@ -1,5 +1,5 @@
 {
-  "name": "smartbrain",
+  "name": "faceapp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "start": "nodemon -L server.js",
     "server": "nodemon server.js",
     "client": "cd client && npm start",
-    "dev": "concurrently \"npm run app\" \"npm run client\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "clientinstall": "cd client && npm install"
   },
   "keywords": [],
@@ -20,8 +20,10 @@
     "cors": "^2.8.5",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
+    "express-validator": "^6.1.1",
     "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
     "mysql2": "^1.6.5",
-    "sequelize": "^5.8.2"
+    "sequelize": "^5.11.0"
   }
 }

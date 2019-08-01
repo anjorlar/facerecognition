@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize("smartbrain", "root", process.env.MYSQL_PASSWORD, {
+const sequelize = new Sequelize("smart-brain", "root", process.env.MYSQL_PASSWORD, {
   host: "localhost",
   dialect: "mysql"
 });
